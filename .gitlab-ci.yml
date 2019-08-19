@@ -1,0 +1,19 @@
+variables:
+  S3_BUCKET_DEVELOPMENT: 'dashboard.bitadata.com'
+  CLOUDFRONT_DISTRIBUTION_ID: 'EW0Z2XNPIWPJU'
+deploy development:
+  stage: build
+  image: nikolaik/python-nodejs:latest
+  script:
+    - yarn
+    - yarn run build
+    - pip install awscli
+    # - aws s3 cp ./build/ s3://$S3_BUCKET_DEVELOPMENT/ --recursive --include "*"
+    # this is the correct way from https://medium.com/faun/this-is-how-i-reduced-my-cloudfront-bills-by-80-a7b0dfb24128
+    - aws s3 sync --delete ./build s3://$S3_BUCKET_DEVELOPMENT --acl public-read #subimos los archivos
+    - echo "Deploy to dashboard.bitadata.com, please check in your browser"
+  environment:
+    name: development
+    url: d1l63dvaobyrf0.cloudfront.net
+  only:
+    - dev #importante, debe coincidir con la rama que quieras observar para hacer el CD

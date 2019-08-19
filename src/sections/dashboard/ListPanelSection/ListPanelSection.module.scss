@@ -1,0 +1,22 @@
+.treeview {
+  margin-left: -30px;
+  li {
+    display: flex;
+    color: #d4d4d4 !important;
+    border-bottom: 0 !important;
+    font-size: 14px;
+    margin-top: 5px;
+    align-items: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 10px;
+    div {
+      margin-left: 15px;
+      margin-right: 2px;
+    }
+  }
+
+  li[aria-pressed='true'] {
+    color: #50c1fb !important;
+  }
+}

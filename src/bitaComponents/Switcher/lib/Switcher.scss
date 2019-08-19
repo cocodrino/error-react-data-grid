@@ -1,0 +1,17 @@
+.switcher {
+  .react-switch-handle {
+    height: 22px;
+    width: 21px;
+    background: rgb(82, 66, 66) !important;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(29px);
+    top: 3px;
+    right: 32px;
+    outline: 0px;
+    border: 0px;
+    transition: background-color 0.25s ease 0s, transform 0.25s ease 0s, box-shadow 0.15s ease 0s;
+  }
+}

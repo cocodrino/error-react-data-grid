@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Minus</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.-Methodology-Module---04" transform="translate(-101.000000, -356.000000)">
+            <g id="Minus" transform="translate(101.000000, 356.000000)">
+                <path d="M3.5,5.98965517 L8.73779297,5.98965517" id="Line-3" stroke="#C7C7C7" stroke-linecap="square"></path>
+                <path d="M5.98965517,11.9793103 C9.28965517,11.9793103 11.9793103,9.28965517 11.9793103,5.98965517 C11.9793103,2.68965517 9.28965517,0 5.98965517,0 C2.68965517,0 0,2.68965517 0,5.98965517 C0,9.28965517 2.68965517,11.9793103 5.98965517,11.9793103 Z M5.98965517,0.837931034 C8.82413793,0.837931034 11.1413793,3.14482759 11.1413793,5.98965517 C11.1413793,8.83448276 8.83448276,11.1413793 5.98965517,11.1413793 C3.14482759,11.1413793 0.837931034,8.82413793 0.837931034,5.98965517 C0.837931034,3.15517241 3.15517241,0.837931034 5.98965517,0.837931034 Z" id="Shape" fill="#C7C7C7" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
