@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import * as CONSTANT from '../constants/calculator-constants';
 import * as Action from '../state/actions/calculator-actions';
+import BitaButton from '../components/BitaButton/BitaButton';
 
-const style = {
+const classes = {
   content: 'grid justify-center items-center',
   label: 'text-xl block my-3',
-  button: color => `w-12 text-3xl text-gray-800 px-4 mx-2 rounded-full ${color}`,
 };
 
 const mapStateToProps = state => {
@@ -27,13 +27,13 @@ const HomeComponent = props => {
   };
 
   return (
-    <div className={style.content}>
+    <div className={classes.content}>
       <div className="w-2/5 mx-auto pt-5">
         <span className="text-3xl">This is a basic example application</span>
 
         <div className="pt-5 w-3/4 mx-auto">
           {/* eslint-disable-next-line jsx-a11y/label-has-for,jsx-a11y/label-has-associated-control */}
-          <label className={style.label}>
+          <label className={classes.label}>
             Addend A:
             <input
               className="rounded bg-gray-500 ml-3"
@@ -45,7 +45,7 @@ const HomeComponent = props => {
           </label>
 
           {/* eslint-disable-next-line jsx-a11y/label-has-for,jsx-a11y/label-has-associated-control */}
-          <label className={style.label}>
+          <label className={classes.label}>
             Addend B:
             <input
               className="rounded bg-gray-500 ml-3 text-black"
@@ -57,21 +57,11 @@ const HomeComponent = props => {
           </label>
 
           <div className="block w-7 ml-24 mt-12">
-            <button
-              type="button"
-              className={style.button('bg-electricalblue')}
-              onClick={props.plusOperation}
-            >
-              +
-            </button>
+            <BitaButton onClick={props.plusOperation}>+</BitaButton>
 
-            <button
-              type="button"
-              className={style.button('bg-alternative')}
-              onClick={props.minusOperation}
-            >
+            <BitaButton alternative onClick={props.minusOperation}>
               -
-            </button>
+            </BitaButton>
           </div>
 
           {/* eslint-disable-next-line jsx-a11y/label-has-for,jsx-a11y/label-has-associated-control */}
