@@ -1,0 +1,1 @@
+export const TOGGLE_METRIC = 'METRICS/TOGGLE_METRIC';

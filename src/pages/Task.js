@@ -47,8 +47,5 @@ const HomeComponent = props => {
   );
 };
 
-const Home = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(HomeComponent);
+const Home = connect(mapStateToProps, mapDispatchToProps)(HomeComponent);
 export default Home;

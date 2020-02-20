@@ -77,8 +77,5 @@ const HomeComponent = props => {
   );
 };
 
-const Calculator = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(HomeComponent);
+const Calculator = connect(mapStateToProps, mapDispatchToProps)(HomeComponent);
 export default Calculator;
